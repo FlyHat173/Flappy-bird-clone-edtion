@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://ia7t1tf5yt8y"]
+
+[ext_resource type="Texture2D" uid="uid://bq6dlu0e3ek0s" path="res://image/Free Pixel Art Forest/Preview/Background.png" id="1_ig7tw"]
+[ext_resource type="PackedScene" uid="uid://cx65tf4tm8b75" path="res://bird.tscn" id="2_0xm2m"]
+
+[node name="main" type="Node2D"]
+
+[node name="background" type="Sprite2D" parent="."]
+position = Vector2(580.25006, 325.12503)
+scale = Vector2(1.2429959, 0.81935686)
+texture = ExtResource("1_ig7tw")
+
+[node name="bird" parent="." instance=ExtResource("2_0xm2m")]
