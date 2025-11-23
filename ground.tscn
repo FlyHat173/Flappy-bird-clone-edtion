@@ -1,0 +1,35 @@
+[gd_scene load_steps=5 format=3 uid="uid://15eovh0ww6q6"]
+
+[ext_resource type="Script" uid="uid://p71vhfg6mfw" path="res://ground.gd" id="1_t7tip"]
+[ext_resource type="Texture2D" uid="uid://dcbww0m67156a" path="res://image/flappy_bird_assets/ground.png" id="1_yh8r4"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_tv015"]
+size = Vector2(1727, 165)
+
+[sub_resource type="GDScript" id="GDScript_tv015"]
+script/source = "extends CollisionShape2D
+
+
+# Called when the node enters the scene tree for the first time.
+func _ready() -> void:
+	pass # Replace with function body.
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta: float) -> void:
+	pass
+"
+
+[node name="Ground" type="Area2D"]
+script = ExtResource("1_t7tip")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(865, 850)
+texture = ExtResource("1_yh8r4")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(864.5, 851.5)
+shape = SubResource("RectangleShape2D_tv015")
+script = SubResource("GDScript_tv015")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

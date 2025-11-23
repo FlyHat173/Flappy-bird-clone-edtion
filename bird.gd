@@ -15,8 +15,9 @@ func reset():
 	flying = false
 	position = START_POS
 	set_rotation(0)
+	velocity = Vector2.ZERO
  
-func _physics_process(delta):
+func _physics_process(delta          ):
 	if flying or falling:
 		velocity.y += GRAVITY * delta 
 		
@@ -31,6 +32,6 @@ func _physics_process(delta):
 		move_and_collide(velocity * delta)
 	else:
 		$AnimatedSprite2D.stop()
-		
 func flap():
 	velocity.y = FLAP_SPEED
+ 

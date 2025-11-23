@@ -11,11 +11,22 @@ config_version=5
 [application]
 
 config/name="Flappy-bird-clone-edition"
-run/main_scene="uid://ia7t1tf5yt8y"
+run/main_scene="uid://be021joi4ohd2"
 config/features=PackedStringArray("4.5", "Mobile")
 config/icon="res://icon.svg"
+
+[display]
+
+window/size/viewport_width=864
+window/size/viewport_height=936
+
+[input]
+
+flying={
+"deadzone": 0.2,
+"events": []
+}
 
 [rendering]
 
 textures/canvas_textures/default_texture_filter=0
-renderer/rendering_method="mobile"
