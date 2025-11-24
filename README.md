@@ -13,16 +13,23 @@
 ### 1 download 
 https://github.com/FlyHat173/Flappy-bird-clone-edtion/releases/tag/v0.0.1
 
-2 unzip folder
+### 2 unzip folder
 ```cmd
  unzip Flappy-bird-clone-edtion.zip
 ```
 
-3
+### 3 cd
 ```cmd
 cd Flappy-bird-clone-edtion/Flappy-bird-clone-edition
 ```
 
-4 chmod +x Flappy-bird-clone-edition.x86_64
-5 chmod +x Flappy-bird-clone-edition.sh
-6 ./Flappy-bird-clone-edition.sh
+### 4 allow executing file as program
+```cmd
+chmod +x Flappy-bird-clone-edition.x86_64
+chmod +x Flappy-bird-clone-edition.sh
+```
+
+### 6 run script
+```cmd
+./Flappy-bird-clone-edition.sh
+```
