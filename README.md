@@ -33,3 +33,6 @@ chmod +x Flappy-bird-clone-edition.sh
 ```cmd
 ./Flappy-bird-clone-edition.sh
 ```
+
+## play
+click mouse button left to play
