@@ -13,9 +13,9 @@
 ### 1 
 download https://github.com/FlyHat173/Flappy-bird-clone-edtion/releases/tag/v0.0.1
 
+2 unzip folder
+```Flappy-bird-clone-edtion.zip```
 
-
-2 unzip folder Flappy-bird-clone-edtion.zip 
 3 cd Flappy-bird-clone-edtion/Flappy-bird-clone-edition
 4 chmod +x Flappy-bird-clone-edition.x86_64
 5 chmod +x Flappy-bird-clone-edition.sh
